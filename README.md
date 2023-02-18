@@ -50,7 +50,7 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@rick881](https://www.frontendmentor.io/profile/rick881)
+- Frontend Mentor - [https://www.frontendmentor.io/profile/rick881]
 
 
 
