@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* PRIMARY */
+    --orange: hsl(25, 97%, 53%);
+    /* NEUTRAL */
+    --white: hsl(0, 0%, 100%);
+    --LightGrey: hsl(217, 12%, 63%);
+    --MediumGrey: hsl(216, 12%, 54%);
+    --DarkBlue: hsl(213, 19%, 18%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+    --OtherBlue: hsl(213, 20%, 22%);
+}
+
+body {
+    background-color: var(--VeryDarkBlue);
+    font-family: 'Overpass', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+article {
+    max-width: 400px;
+    border-radius: 2rem;
+    background: var(--DarkBlue);
+    padding: 1.5rem;
+}
+
+.main img {
+    background: var(--OtherBlue);
+    border-radius: 50%;
+    padding: .5rem;
+}
+.star {
+    padding-bottom: 1rem;
+}
+
+.title, 
+.thankyou {
+    color: var(--white);
+    padding-bottom: .5rem;
+}
+.desc,
+.info {
+    color: var(--LightGrey);
+}
+
+.main ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+}
+
+.rate-btn {
+    width: 2.5rem;
+    height: 2.5rem;
+    color: var(--MediumGrey);
+    border: none;
+    border-radius: 50%;
+    background: var(--OtherBlue);
+    cursor: pointer;
+    transition: all .3s;
+}
+.rate-btn:hover {
+    background: var(--orange);
+    color: var(--white);
+}
+.rate-btn:focus {
+    background: var(--LightGrey);
+    color: white;
+}
+
+.btn {
+    color: var(--white);
+    background: var(--orange);
+    padding: 0.5rem;
+    width: 100%;
+    letter-spacing: .1rem;
+    border: none;
+    border-radius: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: .5rem;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all .3s;
+}
+.btn:hover {
+    color: var(--orange);
+    background: var(--white);
+}
+
+.rate {
+    margin-top: 1rem;
+}
+
+
+.thank-you {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.thankyou img {
+    display: block;
+}
+.topImage, .txt-orange {
+    margin: 0 auto 1.5rem;
+}
+.txt-orange {
+    background: var(--OtherBlue);
+    color: var(--orange);
+    border-radius: 1rem;
+    padding: .2rem .7rem;
+    font-size: 14px;
+}
+
+.hidden {
+    display: none;
+}
+.attribution {
+    color: var(--white);
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
